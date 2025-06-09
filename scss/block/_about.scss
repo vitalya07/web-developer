@@ -1,0 +1,65 @@
+.about {
+    padding: 100px 0;
+    &-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 60px;
+    }
+    &-left {
+        max-width: 800px;
+    }
+    &-right {
+        max-width: 400px;
+        padding-top: 90px;
+    }
+    &-img {
+        width: 400px;
+        height: auto;
+    }
+    &-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: 20px 20px 50px $darkColor;
+    }
+    &-title {
+        font-family: "PT Sans", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 40px;
+        color: $whiteColor;
+        margin-bottom: 30px;
+        max-width: 400px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 70%;
+            height: 3px;
+            background-color: $redColor;
+        }
+    }
+    &-subtitle {
+        font-family: "PT Sans", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 30px;
+        color: $resColorHover;
+        margin-bottom: 20px;
+    }
+    &-descr {
+        font-family: "PT Sans", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 22px;
+        color: $whiteColor;
+        margin-bottom: 20px;
+        &:nth-child(8) {
+            margin-bottom: 50px;
+        }
+    }
+
+}

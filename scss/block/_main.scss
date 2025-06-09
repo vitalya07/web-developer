@@ -1,5 +1,6 @@
 .main {
-    padding: 150px 0;
+    margin-top: 150px;
+    position: relative;
     &-title {
         font-family: "PT Sans", sans-serif;
         font-weight: 700;
@@ -8,14 +9,16 @@
         line-height: 120%;
         color: $whiteColor;
         max-width: 900px;
+        text-align: center;
+        margin: 0 auto;
         &__red {
             font-family: "PT Sans", sans-serif;
-        font-weight: 700;
-        font-style: italic;
-        font-size: 60px;
-        line-height: 120%;
-        color: $whiteColor;
-        max-width: 900px;
+            font-weight: 700;
+            font-style: italic;
+            font-size: 60px;
+            line-height: 120%;
+            color: $whiteColor;
+            max-width: 900px;
             color: $redColor;
         }
     }
@@ -76,5 +79,33 @@
         a {
             color: $redColor;
         }
+    }
+    &-cintent {
+        position: relative;
+        z-index: 2;
+    }
+    &-img {        
+        align-self: end;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+
+    }
+    &-image {
+        transition: all .4s ease;
+        border-radius: 100%;
+        width: 300px;  
+        height: auto;
+    }
+    &-box {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        position: relative;
+    }
+    &-content {
+        margin: 0 auto;
     }
 } 
