@@ -1,0 +1,80 @@
+.main {
+    padding: 150px 0;
+    &-title {
+        font-family: "PT Sans", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 60px;
+        line-height: 120%;
+        color: $whiteColor;
+        max-width: 900px;
+        &__red {
+            font-family: "PT Sans", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 60px;
+        line-height: 120%;
+        color: $whiteColor;
+        max-width: 900px;
+            color: $redColor;
+        }
+    }
+    &-form {
+        max-width: 700px;
+        padding: 30px 50px 30px 0;
+    }
+    &-input {
+        display: block;
+        width: 350px;
+        height: 45px;
+        border-radius: 10px;
+        padding: 0 10px;
+        border: none;
+        margin-bottom: 20px;
+        &::placeholder {
+            font-family: "PT Sans", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 22px;
+            line-height: 120%;
+            color: $darkGrayColor;
+        }
+    }
+    &-msg {
+        width: 350px;
+        height: 150px;
+        padding: 10px;
+        resize: none;
+        margin-bottom: 30px;
+        &::placeholder {
+            font-family: "PT Sans", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 22px;
+            line-height: 120%;
+            color: $darkGrayColor;
+        }
+    }
+    &-btn {
+        width: 350px;
+        margin-bottom: 30px;
+    }
+    &-warning {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        gap: 10px;
+        max-width: 550px;
+    }
+    &-info {
+        font-family: "PT Sans", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 12px;
+        line-height: 120%;
+        color: $whiteColor;
+        a {
+            color: $redColor;
+        }
+    }
+} 
